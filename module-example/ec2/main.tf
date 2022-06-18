@@ -26,6 +26,7 @@ resource "aws_instance" "web" {
   }
   provisioner "remote-exec" {
     inline = [
+       "sudo -fr /var/run/yum.pid",
        "sudo yum update -y",   
        "sudo yum amazon-linux-extras install docker",
        "sudo yum install docker -y",
