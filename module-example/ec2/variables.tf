@@ -25,3 +25,9 @@ variable "ingress_ports" {
   type    = list(any)
   default = [80, 22, 433, 8080, 8282]
 }
+
+variable "instance_type" {
+  type = string
+  default = "t3.small"
+  
+}
