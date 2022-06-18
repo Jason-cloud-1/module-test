@@ -54,7 +54,7 @@ resource "aws_instance" "web" {
     
   }
   tags = {
-    Name = "dev-server"
+    Name = "${var.environment-prefix}-bastion"
   }
 }
 
