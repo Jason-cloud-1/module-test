@@ -1,7 +1,7 @@
 variable "environment-prefix" {
   type        = string
   description = "A prefix to be prepended to every resource name"
-  default     = "itom"
+  default     = "ec2"
 }
 
 variable "tags" {

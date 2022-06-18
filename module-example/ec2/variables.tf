@@ -21,3 +21,7 @@ variable "ssh-private-key" {
   type        = string
   description = "Private key to use for login to bastion VM"
 }
+variable "ingress_ports" {
+  type    = list(any)
+  default = [80, 22, 433, 8080, 8282]
+}
