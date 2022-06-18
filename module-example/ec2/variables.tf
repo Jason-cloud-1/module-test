@@ -27,7 +27,7 @@ variable "ingress_ports" {
 }
 
 variable "instance_type" {
-  type = string
-  default = "t3.small"
+    type          = string
+    description   = "The instance type to use for running the database. See AWS homepage for available types"
   
 }
